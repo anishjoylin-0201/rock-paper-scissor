@@ -40,9 +40,9 @@
     <div class="game-container">
         <h1>Rock Paper Scissors</h1>
         <div>
-            <span class="emoji" onclick="play('rock')">🪨</span>
-            <span class="emoji" onclick="play('paper')">📄</span>
-            <span class="emoji" onclick="play('scissors')">✂️</span>
+            <span class="emoji" onclick="play('rock')">🪨-Rock</span>
+            <span class="emoji" onclick="play('paper')">📄-Paper</span>
+            <span class="emoji" onclick="play('scissors')">✂️-Scissors</span>
         </div>
         <div id="result"></div>
     </div>
@@ -66,7 +66,7 @@
             }
 
             // Corrected line: Use template literals correctly and include user and computer choices.
-            document.getElementById('result').innerText = You chose: ${userChoice} | Computer chose: ${computerChoice}. ${result};
+            document.getElementById('result').innerText = `You chose: ${userChoice} | Computer chose: ${computerChoice}. ${result}`;
         }
     </script>
 </body>
